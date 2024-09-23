@@ -1,1 +1,4 @@
 # Snowfall_Prediction
+This is a small personal project using machine learning. Pandas is used to clean the csv file and extra columns such as the fog, drizzle, and sun column (only wanted rain and snow, where rain is 0 and snow is 1). Additionally, I used a heatmap to visualize correlation between some features in the dataset and removed those that didn't impact the weather.
+For training, I split the data into training and test sets and oversampled the data because there is more frequent occurences of rainy weather than snowy weather, and this allows for more balanced dataset. Because I am using logistic regression (useful for binary classification tasks, in this case rain 0 and snow 1), I normalized the features so that they have a mean of 0 and standard deviation of 1.
+Logistic regression calculates probability of an input by using a logistic function, and based on the probability calculated it will assign the particular class with a lable of 0 or 1. 
